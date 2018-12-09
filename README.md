@@ -29,3 +29,5 @@ if you want Read only access then you have to add "const" :
 int& operator[](int index) const{
       return m_ptr[index];
   }
+---- Array4.cpp ----
+Array implementation with bounds checking -- TRY - CATCH exception
