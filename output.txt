@@ -1,0 +1,26 @@
+ARRRAYYYYY 2	
+:D :D :D :D ! 
+create empty array 
+a.size() is 0
+----------
+b.Size() is 10
+ARRRAYYYYY 2	
+:D :D :D :D ! 
+create empty array 
+a.size() is 0
+----------
+b.Size() is 10
+:D :D :D :D ! 
+create empty array 
+a.size() is 0
+---------------
+b.Size() is 10
+----------------
+
+ARRRAYYYYY 3	
+:D :D :D :D ! 
+Create empty array 
+a.size() is 0
+---------------
+b.Size() is 10
+----------------
