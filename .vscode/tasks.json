@@ -1,0 +1,19 @@
+{
+   "version": "2.0.0",
+ 
+    "osx": {
+        "command": "clang++",
+        "args": [
+            "-Wall",
+            "helloworld.cpp",
+            "-v"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        }
+        },
+        "problemMatchers": [
+            "$gcc"
+        ]
+    }
