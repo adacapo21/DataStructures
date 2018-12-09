@@ -29,7 +29,7 @@ class IntArray {
   bool IsEmpty() const {
     return (m_size == 0);
   }
-  //return by value
+  //return by value 
   int operator[](int index){
       return m_ptr[index];
   }
@@ -44,8 +44,9 @@ int main(){
     out << ":D :D :D :D ! \n" ;
     out.close(); //close of filename.txt
 
+IntArray c{3};
     std::cout<<"\nARRRAYYYYY 3\t\n";
-    std::cout << ":D :D :D :D ! \n" ; 
+    std::cout << "\n:D :D :D :D ! \n" ; 
     std::cout<< "Create array \n";
     IntArray a{};
     std::cout<< "a.size() is " << a.Size() << '\n';

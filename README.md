@@ -20,3 +20,12 @@ Also , you have to be sure that in your "tasks.json" file you can see something 
             "Array2.cpp", <-- change it
             "-v"
         ],
+
+-- Array3.cpp -- 
+Give external code access to the internal array elements ,allowing modifications.
+What is allowing moification is returning a reference to the original array elements.
+
+if you want Read only access then you have to add "const" :
+int& operator[](int index) const{
+      return m_ptr[index];
+  }
