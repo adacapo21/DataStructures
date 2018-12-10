@@ -1,7 +1,8 @@
-// //Array 4 - array implementation with bounds checking
+//Array 6
 
 #include <cassert>
 #include <iostream>
+#include <ostream>
 
  //represent the exception thrown 
 class IndexOutOfBoundsException{};
@@ -57,30 +58,40 @@ class IntArray {
   }
 };
 
+std::ostream& operator<<(std::ostream& os , const IntArray& a){
+  
+    os << "[";
+    for(int i=0; i < a.Size(); i++){
+        os << a[i]<< ' ';
+    }
+    os << "]";
+    return os;    
+}
+
 int main() {
   using std::cout;
-  using std::cin;
 
-  try {
-    IntArray a{10};
-    for (int i = 0; i < a.Size(); i++) {
-      a[i] = (i+1)*10;
-    }
-    
-    cout << " Array elements: ";
-    for (int i = 0; i < a.Size(); i++) {
-      cout << a[i] << ' ';
-    }
-    cout << '\n';
+  IntArray a{3};
+  a[0]=10;
+  a[1]=20;
+  a[2]=30;
 
-    cout << " Array size is " << a.Size() << "\n";
-    cout << " Please enter an array index: ";
-    int index{};
-    cin >> index;
+  IntArray b = a ; //copy initialization 
+  //this cause a core dump 
+  //if you change just and only one of your values 
+  //inside of b Array
 
-    cout << " The element at index " << index << " is " << a[index] << '\n';
+  cout << " a = " << a << '\n';
+  cout << " b = " << b << '\n';
 
-  } catch (const IndexOutOfBoundsException& e) {
-    cout << "\n *** ERROR: Invalid array index!! \n";
-  }
+  b[1] = 100; // compiler of c++ causes a core dump here
+  //a && b arrays are sharing the same pointer pointer which causes the Error
+  cout << "\n b[1] = 100; \n\n";
+
+  cout << " a = " << a << '\n';
+  cout << " b = " << b << '\n';
 }
+//***** Error after running
+//Array6(8623,0x7fffb18af3c0) malloc: *** error for object 0x7f9b3cc00080: pointer being freed was not allocated
+//*** set a breakpoint in malloc_error_break to debug
+//Abort trap: 6

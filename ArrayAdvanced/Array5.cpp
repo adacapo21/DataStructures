@@ -1,7 +1,8 @@
-// //Array 4 - array implementation with bounds checking
+// //Array 5 - Enable nice idiomatic array printing with operator<< overload
 
 #include <cassert>
 #include <iostream>
+#include <ostream>
 
  //represent the exception thrown 
 class IndexOutOfBoundsException{};
@@ -57,30 +58,25 @@ class IntArray {
   }
 };
 
+std::ostream& operator<<(std::ostream& os , const IntArray& a){
+    //Print array elements without using cout
+    //like this [10 20 30]
+ 
+    os << "[";
+    for(int i=0; i < a.Size(); i++){
+        os << a[i]<< ' ';
+    }
+    os << "]";
+    return os;    
+}
+
 int main() {
   using std::cout;
-  using std::cin;
 
-  try {
-    IntArray a{10};
-    for (int i = 0; i < a.Size(); i++) {
-      a[i] = (i+1)*10;
-    }
-    
-    cout << " Array elements: ";
-    for (int i = 0; i < a.Size(); i++) {
-      cout << a[i] << ' ';
-    }
-    cout << '\n';
-
-    cout << " Array size is " << a.Size() << "\n";
-    cout << " Please enter an array index: ";
-    int index{};
-    cin >> index;
-
-    cout << " The element at index " << index << " is " << a[index] << '\n';
-
-  } catch (const IndexOutOfBoundsException& e) {
-    cout << "\n *** ERROR: Invalid array index!! \n";
+  IntArray a{15};
+  for (int i = 0; i < a.Size(); i++) {
+    a[i] = (i+1)*10;
   }
+    
+  cout << " Array elements : " << a << '\n';
 }

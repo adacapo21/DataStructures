@@ -1,0 +1,11 @@
+ a = [10 20 30 ]
+ b = [10 20 30 ]
+
+ b[1] = 100; 
+
+ a = [10 100 30 ]
+ b = [10 100 30 ]
+
+Array6(8794,0x7fffb18af3c0) malloc: *** error for object 0x7ffb17402860: pointer being freed was not allocated
+*** set a breakpoint in malloc_error_break to debug
+Abort trap: 6

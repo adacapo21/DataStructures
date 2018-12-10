@@ -12,7 +12,7 @@
             "-fno-optimize-sibling-calls", //perfect stack traces , use it with "-01"
             //"-01", // for optimization of the code
             //"helloworld.cpp",
-            "Array2.cpp",
+            "ArrayAdvanced/Array5.cpp",
             "-v"
         ],
         "group": {

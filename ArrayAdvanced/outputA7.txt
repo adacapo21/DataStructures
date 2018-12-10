@@ -1,0 +1,10 @@
+ a = [10 20 30 ]
+ b = [10 20 30 ]
+
+ b[1] = 100; 
+
+ a = [10 20 30 ]
+ b = [10 100 30 ]
+
+you see here that a[] array is not trigerred, and remains the same
+and b [1] became 100 as we wanted.
