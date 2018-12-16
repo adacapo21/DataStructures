@@ -1,4 +1,4 @@
-// //Array 5 - Enable nice idiomatic array printing with operator<< overload
+// //Array 5 - Enable nice idiomatic array printing with operator
 
 #include <cassert>
 #include <iostream>
