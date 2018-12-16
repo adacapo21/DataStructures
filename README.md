@@ -1,5 +1,5 @@
 # DataStructures
-Tasks:
+Tasks [SimpleSafeArray]
 - Safe memory management with constructors/destructors
 - safe element access with operator[]
 - Bound checking
