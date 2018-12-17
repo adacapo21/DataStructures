@@ -49,6 +49,9 @@ int& operator[](int index) const{
 ---- Array Test - Implementing swap for Array class / 
 Swap array objects by swapping their data members - Test the Array<T> class template ----
 
+---- SearchArray ---- 
+Show the differences between Linear && Binary Search in an Array
+
 
 
 
