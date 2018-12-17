@@ -31,8 +31,6 @@ class Array {
   bool IsValidIndex(int index) const {
     return (index >= 0) && (index < m_size);
   }
-
-
   //
   // Public Interface
   //
