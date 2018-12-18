@@ -6,7 +6,7 @@ constexpr int kNotFound = -1;
 
 int BinarySearch(int element, const int* v, int size) {
   int left = 0;
-  int right = size - 1;
+  int right = size - 1; //array indexes are zero based
 
   while (left <= right) {
     int middle = (left + right) / 2;
@@ -16,6 +16,7 @@ int BinarySearch(int element, const int* v, int size) {
       return middle;
 
     } else if (v[middle] < element) {
+      // array sorted by asorted order  
       // Search in the right-half: (middle+1..right)
       left = middle + 1;      
 
@@ -38,6 +39,7 @@ void Print(const vector<int>& v) {
 }
 
 int main() {
+  //array creation  
   vector<int> v{11, 22, 33, 44, 55};
   Print(v);
 

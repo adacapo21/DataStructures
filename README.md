@@ -50,7 +50,7 @@ int& operator[](int index) const{
 Swap array objects by swapping their data members - Test the Array<T> class template ----
 
 ---- SearchArray ---- 
-Show the differences between Linear && Binary Search in an Array
+Show the differences between Linear (complexity O(N)) && Binary Search in an Array : Binary Search has a bog advantage on large amount of data. (complexity O(N))
 
 
 

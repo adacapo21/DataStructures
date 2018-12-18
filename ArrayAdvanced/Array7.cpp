@@ -1,5 +1,3 @@
-// //Array 5 - Enable nice idiomatic array printing with operator<< overload
-
 #include <cassert>
 #include <iostream>
 #include <ostream>
