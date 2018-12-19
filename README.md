@@ -1,17 +1,17 @@
 # DataStructures
-===============================
+# ===============================
 
 
 # [SimpleSafeArray] Tasks 
-===============================
+# ==============================
 
 - Safe memory management with constructors/destructors
 - safe element access with operator[]
 - Bound checking
-===============================
+# ===============================
 
 # [ArrayAdvanced] Improving Array Implementation 
-===============================
+# ==============================
 
 - cout << myArray
 - Copying Arrays >> Shallow vs deep copy
@@ -40,17 +40,17 @@ int& operator[](int index) const{
 
 ---- Array Test - Implementing swap for Array class / 
 Swap array objects by swapping their data members - Test the Array<T> class template ----
-===============================
+# ===============================
 
 # [SearchArray]
-===============================
+# ===============================
 
 Show the differences between Linear (complexity O(N)) && Binary Search in an Array : 
 Binary Search has a bog advantage on large amount of data. (complexity O(N))
 
-===============================
+# ===============================
 # [Stack]
-===============================
+# ===============================
 - Fundamental operations (Push , Pop ,Top)
 - stack overflow (exception try/catch)
 
@@ -64,16 +64,16 @@ Variations from Stack1.hpp:
 Stack2.cpp
 
 Simulate a Stack Overflow and show how to properly handle it via exceptions
-===============================
+# ===============================
 
 # [Linked Lists]
-===============================
+# ===============================
 
 to be implemented
 
-===============================
+# ===============================
 # [Build && Run] 
-===============================
+# ==============================
 
 If you want to run a specific file (ex.Array2.cpp) then :
 Build project : clang++ -std=c++14 -Wall -fsanitize=address -g -fno-optimize-sibling-calls Array2.cpp -v
