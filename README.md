@@ -5,7 +5,7 @@
 - safe element access with operator[]
 - Bound checking
 
-#[ArrayAdvanced] Improving Array Implementation 
+# [ArrayAdvanced] Improving Array Implementation 
 - cout << myArray
 - Copying Arrays >> Shallow vs deep copy
 - Copy-and-swap idiom
@@ -34,10 +34,11 @@ int& operator[](int index) const{
 ---- Array Test - Implementing swap for Array class / 
 Swap array objects by swapping their data members - Test the Array<T> class template ----
 
-#[ SearchArray ]
-Show the differences between Linear (complexity O(N)) && Binary Search in an Array : Binary Search has a bog advantage on large amount of data. (complexity O(N))
+# [SearchArray]
+Show the differences between Linear (complexity O(N)) && Binary Search in an Array : 
+Binary Search has a bog advantage on large amount of data. (complexity O(N))
 
-#[ Stack ]
+# [Stack]
 
 Array.hpp: A basic Array<T> class template implementation
 
@@ -51,7 +52,7 @@ Stack2.cpp
 Simulate a Stack Overflow and show how to properly handle it via exceptions
 
 
-#Build && Run 
+# [Build && Run] 
 If you want to run a specific file (ex.Array2.cpp) then :
 Build project : clang++ -std=c++14 -Wall -fsanitize=address -g -fno-optimize-sibling-calls Array2.cpp -v
 Run : g++ Array2.cpp -o Array2 or ./a.out or right click to your file that you want to run
