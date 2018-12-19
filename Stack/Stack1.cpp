@@ -4,12 +4,12 @@
 using std::cout;
 
 int main() {
-  Stack<int> stack{10};
+  Stack<int> stack{10}; //stack of 10 elements
   assert(stack.IsEmpty());
   assert(stack.MaxSize() == 10);
 
   cout << " Stack created:\n";
-  cout << stack;
+  cout << stack;  //stack's ostream operator << overload
 
   cout << " Pushing some elements:\n";
   cout << " stack.Push(10)\n";
@@ -24,6 +24,7 @@ int main() {
   cout << " stack.Pop(): " << stack.Pop() << '\n';
   cout << " stack.Pop(): " << stack.Pop() << '\n';
   assert(stack.Size() == 1);
+  //assert(stack.Size() == 2);
   assert(!stack.IsEmpty());
 
   cout << " stack.Top(): " << stack.Top() << '\n';

@@ -10,10 +10,13 @@
 
 #include <ostream>
 #include "Array.hpp"
+//#include "Stack1.hpp"
 
 // This represents a stack overflow error.
 // In production code exception classes can be derived from std::runtime_error
 class StackOverflowException {};
+
+class StackUnderFlowException {};
 
 template <typename T>
 class Stack {
@@ -31,6 +34,7 @@ class Stack {
   {}
 
   void Push(const T& element) {
+    //these 3 lines protect Push method from Stack Overflow
     // Before pushing on top of the stack, check that there's enough room
     if (Size() >= MaxSize()) {
       // There's not enough room in this stack for pushing a new element
@@ -45,7 +49,9 @@ class Stack {
   T Pop() {
     // NOTE: We should add a similar check preventing underflow,
     // i.e. popping from an empty stack...
-
+    if (IsEmpty()){
+      throw StackUnderFlowException{};
+    }
     T topElement = m_array[m_top];
     m_top--;
     return topElement;
