@@ -1,30 +1,16 @@
 # DataStructures
-Tasks [SimpleSafeArray]
+
+# [SimpleSafeArray] Tasks 
 - Safe memory management with constructors/destructors
 - safe element access with operator[]
 - Bound checking
 
-Improving Array Implementation [ArrayAdvanced]
+#[ArrayAdvanced] Improving Array Implementation 
 - cout << myArray
 - Copying Arrays >> Shallow vs deep copy
 - Copy-and-swap idiom
 - Move semantics
 - Generic Array<T> using template
-
-
-If you want to run a specific file (ex.Array2.cpp) then you have to do this:
-Build project : clang++ -std=c++14 -Wall -fsanitize=address -g -fno-optimize-sibling-calls Array2.cpp -v
-Run : g++ Array2.cpp -o Array2 or ./a.out or right click to your file that you want to run
-Every file is independant with the others and is consisted by each own main()
-Paste the output in a file by running: ./a.out >> output.txt
-
-
---- if you use Visual Studio Code --- 
-
-Also , you have to be sure that in your "tasks.json" file you can see something like this: 
-
-"args": [ "Array2.cpp"  ] <-- change it 
-
 
 -- Array3.cpp -- 
 
@@ -37,7 +23,6 @@ int& operator[](int index) const{
       return m_ptr[index];
   }
 
-
 ---- Array 4 - Array implementation with bounds checking -- TRY - CATCH exception ----
 
 ---- Array 5 - Enable nice idiomatic array printing with operator<< overload ----
@@ -49,10 +34,10 @@ int& operator[](int index) const{
 ---- Array Test - Implementing swap for Array class / 
 Swap array objects by swapping their data members - Test the Array<T> class template ----
 
----- SearchArray ---- 
+#[ SearchArray ]
 Show the differences between Linear (complexity O(N)) && Binary Search in an Array : Binary Search has a bog advantage on large amount of data. (complexity O(N))
 
----- Stack -----
+#[ Stack ]
 
 Array.hpp: A basic Array<T> class template implementation
 
@@ -65,6 +50,20 @@ Stack2.cpp
 
 Simulate a Stack Overflow and show how to properly handle it via exceptions
 
+
+#Build && Run 
+If you want to run a specific file (ex.Array2.cpp) then :
+Build project : clang++ -std=c++14 -Wall -fsanitize=address -g -fno-optimize-sibling-calls Array2.cpp -v
+Run : g++ Array2.cpp -o Array2 or ./a.out or right click to your file that you want to run
+Every file is independant with the others and is consisted by each own main()
+Paste the output in a file by running: ./a.out >> output.txt
+
+
+--- if you use Visual Studio Code --- 
+
+Also , you have to be sure that in your "tasks.json" file you can see something like this: 
+
+"args": [ "Array2.cpp"  ] <-- change it 
 
 
 
