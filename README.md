@@ -52,7 +52,18 @@ Swap array objects by swapping their data members - Test the Array<T> class temp
 ---- SearchArray ---- 
 Show the differences between Linear (complexity O(N)) && Binary Search in an Array : Binary Search has a bog advantage on large amount of data. (complexity O(N))
 
+---- Stack -----
+Array.hpp: A basic Array<T> class template implementation
 
+Stack2.hpp -- Stack class template refined with overflow protection
+Variations from Stack1.hpp:
+- Added the StackOverflowException class
+- Added code in Stack::Push() checking stack overflow conditions
+
+Stack2.cpp
+=============================================================================
+Simulate a Stack Overflow and show how to properly handle it via exceptions
+=============================================================================
 
 
 
